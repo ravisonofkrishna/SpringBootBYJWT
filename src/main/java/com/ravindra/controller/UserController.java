@@ -32,7 +32,6 @@ public class UserController {
 	public ResponseEntity<String> saveUser(@RequestBody User user)
 	{
 		Integer id=service.saveUser(user);
-		System.out.println("ravi");
 		String body= "User'"+id+"' saved";
 		return ResponseEntity.ok(body);
 	}
